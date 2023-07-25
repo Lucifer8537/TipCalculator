@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "SpaceMono";
+  src: url("../src/fonts/SpaceMono-Regular.ttf"),
+    url("../src/fonts/SpaceMono-Bold.ttf"),
+    url("../src/fonts/SpaceMono-Italic.ttf"),
+    url("../src/fonts/SpaceMono-BoldItalic.ttf");
+}
+
+body {
+  font-family: "SpaceMono";
+  background-color: hsl(185, 41%, 84%);
+  display: grid;
+  @media (min-width: 678px) {
+    place-items: center;
+  }
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}

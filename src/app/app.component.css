@@ -1,0 +1,399 @@
+@media (min-width: 678px) {
+  .container {
+    display: grid;
+  }
+
+  .logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .logo {
+  }
+
+  .tip-container {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .bill-container {
+    display: grid;
+    padding: 20px;
+    width: 370px;
+  }
+
+  .total-container {
+    display: grid;
+    background-color: hsl(183, 100%, 15%);
+    width: 310px;
+    border-radius: 15px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 60px 30px 10px 30px;
+  }
+
+  .billLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .billInputContainer {
+    display: flex;
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  input {
+    font-family: "SpaceMono";
+    font-size: 20px;
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+  }
+
+  .dollar {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+  }
+
+  .billInput {
+    border: 0;
+    outline: 0;
+    background-color: hsl(189, 41%, 97%);
+    height: 25px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .billInput:focus,
+  .billInput:hover,
+  .custom-tip:focus,
+  .custom-tip:hover {
+    outline: 0;
+    border: 2px solid hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  .billInput::placeholder {
+    text-align: center;
+  }
+
+  .selectTipPerc {
+    display: grid;
+    margin-bottom: 25px;
+  }
+
+  .numberOfPeople {
+    display: grid;
+  }
+
+  .tip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .non-custom-tip {
+    font-family: "SpaceMono";
+    width: 115px;
+    height: 39px;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .unselectedTip:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  .selectedTip {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  .custom-tip {
+    font-family: "SpaceMono";
+    width: 105px;
+    height: 35px;
+    font-size: 20px;
+    color: hsl(183, 100%, 15%);
+    border: 2px solid white;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    text-align: right;
+    font-weight: 600;
+    padding-right: 5px;
+    cursor: pointer;
+  }
+
+  .custom-tip::placeholder {
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .tip-amount-container {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .tip-amount-title {
+    display: grid;
+  }
+
+  .title {
+    font-size: 15px;
+    color: white;
+  }
+
+  .person {
+    color: hsl(184, 14%, 56%);
+    font-size: 11px;
+  }
+
+  .tip-amount-total {
+    color: hsl(172, 67%, 45%);
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .reset {
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 600;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    opacity: 0.3;
+  }
+
+  .activated-reset {
+    cursor: pointer;
+  }
+
+  .activated-reset:hover {
+    background-color: hsl(185, 41%, 84%);
+  }
+
+  .warning {
+    border: 2px solid red;
+  }
+
+  .warning-label {
+    color: red;
+    font-size: 13px;
+  }
+
+  .label-container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 678px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .tip-container {
+    flex: 1;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 0px 0px;
+    padding: 8%;
+  }
+
+  .bill-container {
+    display: grid;
+  }
+  .label-container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  .billLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    margin-bottom: 2%;
+    font-size: 90%;
+  }
+  .warning-label {
+    color: red;
+    font-size: 85%;
+  }
+
+  .billInputContainer {
+    display: flex;
+    position: relative;
+    margin-bottom: 5%;
+  }
+  .dollar {
+    position: absolute;
+    top: 32%;
+    left: 4%;
+  }
+  .billInput {
+    border: 0;
+    outline: 0;
+    background-color: hsl(189, 41%, 97%);
+    height: max-content;
+    text-align: right;
+    padding: 1% 4% 1% 2%;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  input {
+    font-family: "SpaceMono";
+    font-size: 150%;
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .tip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+  }
+  .non-custom-tip {
+    font-family: "SpaceMono";
+    width: 45%;
+    height: 39px;
+    font-size: 125%;
+    color: white;
+    border: 0;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .selectedTip {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  .custom-tip {
+    font-family: "SpaceMono";
+    width: 42%;
+    height: 35px;
+    font-size: 125%;
+    color: hsl(183, 100%, 15%);
+    border: 2px solid white;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    text-align: right;
+    font-weight: 600;
+    padding-right: 2%;
+    cursor: pointer;
+  }
+
+  .custom-tip::placeholder {
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+  }
+
+  .billInput:focus,
+  .billInput:hover,
+  .custom-tip:focus,
+  .custom-tip:hover {
+    outline: 0;
+    border: 2px solid hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+  .warning {
+    border: 2px solid red;
+  }
+  .numberOfPeople {
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+  .total-container {
+    display: grid;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10% 5% 5% 5%;
+  }
+  .tip-amount-container {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .tip-amount-title {
+    display: grid;
+  }
+  .title {
+    font-size: 85%;
+    color: white;
+  }
+
+  .person {
+    color: hsl(184, 14%, 56%);
+    font-size: 70%;
+  }
+  .tip-amount-total {
+    color: hsl(172, 67%, 45%);
+    font-size: 200%;
+    font-weight: 600;
+  }
+  .reset {
+    height: 40px;
+    font-size: 100%;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 600;
+    margin-top: 3%;
+    opacity: 0.3;
+  }
+
+  .activated-reset {
+    cursor: pointer;
+  }
+}
