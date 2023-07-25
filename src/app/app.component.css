@@ -9,9 +9,6 @@
     margin-bottom: 50px;
   }
 
-  .logo {
-  }
-
   .tip-container {
     display: flex;
     background-color: hsl(0, 0%, 100%);
@@ -28,12 +25,7 @@
   }
 
   .total-container {
-    display: grid;
-    background-color: hsl(183, 100%, 15%);
     width: 310px;
-    border-radius: 15px;
-    height: -moz-fit-content;
-    height: fit-content;
     padding: 60px 30px 10px 30px;
   }
 
@@ -153,15 +145,7 @@
   }
 
   .tip-amount-container {
-    display: flex;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 25px;
-  }
-
-  .tip-amount-title {
-    display: grid;
   }
 
   .title {
@@ -349,23 +333,12 @@
     margin-bottom: 5%;
   }
   .total-container {
-    display: grid;
-    background-color: hsl(183, 100%, 15%);
-    border-radius: 15px;
-    height: -moz-fit-content;
-    height: fit-content;
     padding: 10% 5% 5% 5%;
   }
   .tip-amount-container {
-    display: flex;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 5%;
   }
-  .tip-amount-title {
-    display: grid;
-  }
+
   .title {
     font-size: 85%;
     color: white;
@@ -392,8 +365,20 @@
     margin-top: 3%;
     opacity: 0.3;
   }
-
-  .activated-reset {
-    cursor: pointer;
-  }
+}
+.tip-amount-title {
+  display: grid;
+}
+.tip-amount-container {
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-container {
+  display: grid;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
