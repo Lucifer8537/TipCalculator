@@ -67,15 +67,6 @@
     cursor: pointer;
   }
 
-  .billInput:focus,
-  .billInput:hover,
-  .custom-tip:focus,
-  .custom-tip:hover {
-    outline: 0;
-    border: 2px solid hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-  }
-
   .billInput::placeholder {
     text-align: center;
   }
@@ -119,23 +110,8 @@
   }
 
   .custom-tip {
-    font-family: "SpaceMono";
     width: 105px;
-    height: 35px;
-    font-size: 20px;
-    color: hsl(183, 100%, 15%);
-    border: 2px solid white;
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 5px;
-    text-align: right;
-    font-weight: 600;
     padding-right: 5px;
-    cursor: pointer;
-  }
-
-  .custom-tip::placeholder {
-    text-align: center;
-    color: hsl(183, 100%, 15%);
   }
 
   input::-webkit-outer-spin-button,
@@ -165,17 +141,10 @@
   }
 
   .reset {
-    height: 40px;
     font-size: 15px;
-    border-radius: 5px;
-    border: 0;
-    outline: 0;
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    font-weight: 600;
+
     margin-top: 75px;
     margin-bottom: 50px;
-    opacity: 0.3;
   }
 
   .activated-reset {
@@ -298,33 +267,10 @@
   }
 
   .custom-tip {
-    font-family: "SpaceMono";
     width: 42%;
-    height: 35px;
-    font-size: 125%;
-    color: hsl(183, 100%, 15%);
-    border: 2px solid white;
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 5px;
-    text-align: right;
-    font-weight: 600;
     padding-right: 2%;
-    cursor: pointer;
   }
 
-  .custom-tip::placeholder {
-    text-align: center;
-    color: hsl(183, 100%, 15%);
-  }
-
-  .billInput:focus,
-  .billInput:hover,
-  .custom-tip:focus,
-  .custom-tip:hover {
-    outline: 0;
-    border: 2px solid hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-  }
   .warning {
     border: 2px solid red;
   }
@@ -354,16 +300,8 @@
     font-weight: 600;
   }
   .reset {
-    height: 40px;
     font-size: 100%;
-    border-radius: 5px;
-    border: 0;
-    outline: 0;
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    font-weight: 600;
     margin-top: 3%;
-    opacity: 0.3;
   }
 }
 .tip-amount-title {
@@ -381,4 +319,38 @@
   border-radius: 15px;
   height: -moz-fit-content;
   height: fit-content;
+}
+.reset {
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  opacity: 0.3;
+}
+.billInput:focus,
+.billInput:hover,
+.custom-tip:focus,
+.custom-tip:hover {
+  outline: 0;
+  border: 2px solid hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.custom-tip::placeholder {
+  text-align: center;
+  color: hsl(183, 100%, 15%);
+}
+.custom-tip {
+  font-family: "SpaceMono";
+  height: 35px;
+  font-size: 125%;
+  color: hsl(183, 100%, 15%);
+  border: 2px solid white;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  text-align: right;
+  font-weight: 600;
+  cursor: pointer;
 }
