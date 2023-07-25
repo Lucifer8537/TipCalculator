@@ -42,10 +42,7 @@
   }
 
   input {
-    font-family: "SpaceMono";
     font-size: 20px;
-    color: hsl(184, 14%, 56%);
-    font-weight: 600;
   }
 
   .dollar {
@@ -112,12 +109,6 @@
   .custom-tip {
     width: 105px;
     padding-right: 5px;
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
   }
 
   .tip-amount-container {
@@ -233,15 +224,7 @@
     cursor: pointer;
   }
   input {
-    font-family: "SpaceMono";
     font-size: 150%;
-    color: hsl(184, 14%, 56%);
-    font-weight: 600;
-  }
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
   }
   .tip {
     display: flex;
@@ -353,4 +336,14 @@
   text-align: right;
   font-weight: 600;
   cursor: pointer;
+}
+input {
+  font-family: "SpaceMono";
+  color: hsl(184, 14%, 56%);
+  font-weight: 600;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
